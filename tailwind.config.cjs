@@ -9,9 +9,8 @@ module.exports = {
       backgroundImage: {
         hero: "url('/inicioAlm.jpg')",
         main: "url('/Background.jpg')",
-        about: "url('/aboutpage-bg.png')",
-        services: "url('/servicespage-bg.jpg')",
-        contact: "url('/contactpage-bg.jpg')",
+        about: "url('/fondoAlmendra.png')",
+        contact: "url('/fondoAneka.jpg')",
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],
