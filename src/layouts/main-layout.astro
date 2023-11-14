@@ -9,12 +9,13 @@ export interface LayoutProps {
 const { title } = Astro.props as LayoutProps;
 ---
 
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="Aneka Garrapiñadas Artesanas" />
     <meta title={title} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +25,15 @@ const { title } = Astro.props as LayoutProps;
     />
 
     <title>{title}</title>
+    <meta
+      name="description"
+      content="Aneka garrapiñadas artesanas, ferias y mercados, frutos secos caramelizados, almendras, avellanas, cacahuetes, sesamo, pipas de girasol, pipas de calabaza, coco, quicos"
+    />
+    <meta
+      name="keywords"
+      content="aneka garrapiñadas garrapinyadas almendras caramelizados caramelizada almendra avellana cacahuete sesamo girasol coco ferias mercados"
+    />
+    <meta name="robots" content="index" />
   </head>
   <body>
     <main class="bg-main bg-no-repeat bg-cover bg-center">
@@ -35,7 +45,16 @@ const { title } = Astro.props as LayoutProps;
     <p
       class="tracking-tight text-base text-center border border-gray-300 bg-white py-10 lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
     >
-      Copyright © Aneka Garrapiñadas | Diseñado por Fituss
+      Copyright© {new Date().getFullYear()} Aneka Garrapiñadas | Diseñado por <a
+        href="https://fitusweb.netlify.app/"
+        target="_blank"
+        class="text-indigo-500"
+        rel="noopener">Fitus</a
+      >
+       | Imágenes por <a href="www.freepik.com" target="_blank" rel="noopener"
+        >Freepik</a
+      >
     </p>
+    <p></p>
   </body>
 </html>

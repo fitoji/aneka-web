@@ -48,13 +48,18 @@ import Instagram from "../icons/instagram.tsx";
           por las delicias caramelizadas.
         </p>
       </div>
-      <img class="h-80 rounded-md" src="/aboutJessi.jpg" alt="jessi" />
+      <img
+        loading="lazy"
+        class="h-80 rounded-md pl-5"
+        src="/aboutJessi.jpg"
+        alt="jessi"
+      />
     </div>
   </section>
   <!-- Quote Section -->
 
   <section
-    class="bg-primary-300 mt-[100px] w-full px-12 lg:px-0 pt-[100px] lg:pt-[100px] lg:max-w-[1200px] mx-auto flex items-center justify-center"
+    class="bg-primary-300 mt-[50px] w-full px-12 lg:px-0 pt-[70px] lg:pt-[70px] lg:max-w-[1200px] mx-auto flex items-center justify-center"
   >
     <QuoteText
       text="Aneka jati samsaram sandhavissam anibbisam gahakaram gavesanto dukkha jati punappunam."
@@ -85,6 +90,7 @@ import Instagram from "../icons/instagram.tsx";
         </p>
       </div>
       <img
+        loading="lazy"
         class="p-5 h-80 rounded-lg"
         src="/aboutAneka.jpeg"
         alt="imagen buda"
@@ -97,9 +103,16 @@ import Instagram from "../icons/instagram.tsx";
   <section
     class="w-full py-[10px] lg:py-[20px] mt-[100px] px-12 lg:px-0 mx-auto bg-primary-300"
   >
-    <div class="w-full flex flex-col gap-10 lg:max-w-[1200px] mx-auto">
-      <div class="flex w-full overflow-x-scroll gap-4 flex-row no-scrollbar">
-        <img class="h-80 rounded-xl" src="/aboutJessi.jpg" alt="" />
+    <div class="w-full flex-wrap gap-10 lg:max-w-[1200px] mx-auto">
+      <div
+        class="flex flex-col md:max-xl:flex-row w-full overflow-x-scroll gap-4 no-scrollbar"
+      >
+        <img
+          loading="lazy"
+          class="h-80 rounded-xl pl-5"
+          src="/aboutJessi.jpg"
+          alt=""
+        />
 
         <div
           class="flex flex-col gap-10 w-full justify-between py-[70px] px-7 bg-white min-w-[284px] items-center rounded-[32px]"
@@ -113,10 +126,10 @@ import Instagram from "../icons/instagram.tsx";
             >
           </p>
           <div class="flex gap-6">
-            <a href="www.facebook.com/aneka.garrapi/">
+            <a href="https://www.facebook.com/aneka.garrapi/">
               <Facebook />
             </a>
-            <a href="/">
+            <a href="https://www.instagram.com/aneka.garrapi/">
               <Instagram />
             </a>
           </div>
@@ -129,7 +142,12 @@ import Instagram from "../icons/instagram.tsx";
             >
           </p>
         </div>
-        <img class="h-60 rounded-lg" src="/aboutfito.jpg" alt="" />
+        <img
+          loading="lazy"
+          class="h-60 rounded-lg pr-5"
+          src="/aboutfito.jpg"
+          alt=""
+        />
       </div>
     </div>
   </section>
