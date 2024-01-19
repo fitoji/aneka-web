@@ -59,7 +59,7 @@ import Instagram from "../icons/instagram.tsx";
   <!-- Quote Section -->
 
   <section
-    class="bg-primary-300 mt-[50px] w-full px-12 lg:px-0 pt-[70px] lg:pt-[70px] lg:max-w-[1200px] mx-auto flex items-center justify-center"
+    class="bg-primary-300 mt-[50px] w-full px-12 lg:px-0 pt-[70px] lg:pt-[70px] mx-auto flex items-center justify-center"
   >
     <QuoteText
       text="Aneka jati samsaram sandhavissam anibbisam gahakaram gavesanto dukkha jati punappunam."
@@ -70,14 +70,14 @@ import Instagram from "../icons/instagram.tsx";
   <!--porque aneka Section -->
 
   <section
-    class="bg-indigo-200 w-full pt-[10px] lg:pt-[15px] px-12 lg:px-0 mx-auto lg:max-w-[1200px]"
+    class="bg-indigo-200 w-full pt-[10px] lg:pt-[15px] px-12 lg:px-200 mx-auto"
   >
     <div
       class="w-full flex flex-col-reverse lg:flex-row justify-between gap-10 items-center"
     >
       <div class="flex flex-col gap-6">
         <h2
-          class="p-5 text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
+          class="p-5 text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:text-[50px] text-text-blue"
         >
           ¿Porqué ANEKA?
         </h2>
@@ -91,7 +91,7 @@ import Instagram from "../icons/instagram.tsx";
       </div>
       <img
         loading="lazy"
-        class="p-5 h-80 rounded-lg"
+        class="object-cover rounded-lg p-5 w-full md:w-100"
         src="/aboutAneka.jpeg"
         alt="imagen buda"
       />
@@ -100,22 +100,22 @@ import Instagram from "../icons/instagram.tsx";
 
   <!-- What People Think About Us Section -->
 
-  <section
-    class="w-full py-[10px] lg:py-[20px] mt-[100px] px-12 lg:px-0 mx-auto bg-primary-300"
-  >
-    <div class="w-full flex-wrap gap-10 lg:max-w-[1200px] mx-auto">
-      <div
-        class="flex flex-col md:max-xl:flex-row w-full overflow-x-scroll gap-4 no-scrollbar"
-      >
+  <section class="w-full py-[10px] lg:py-[20px] px-12 mx-auto bg-primary-300">
+    <div class="w-full mx-auto flex-wrap gap-10">
+      <div class="flex flex-col md:flex-row w-full gap-4">
         <img
           loading="lazy"
-          class="h-80 rounded-xl pl-5"
           src="/aboutJessi.jpg"
           alt=""
+          class="object-cover w-full pl-5 h-full rounded-lg md:w-80"
+          height={80}
+          style={{
+            objectFit: "cover",
+          }}
         />
 
         <div
-          class="flex flex-col gap-10 w-full justify-between py-[70px] px-7 bg-white min-w-[284px] items-center rounded-[32px]"
+          class="flex flex-col gap-10 w-full justify-between py-[70px] px-7 bg-white items-center"
         >
           <p class="flex flex-col tracking-tight leading-9 text-center">
             <span class="text-primary-200 text-lg lg:text-[25px] font-dm"
@@ -135,7 +135,7 @@ import Instagram from "../icons/instagram.tsx";
           </div>
           <p class="flex flex-col tracking-tight leading-9 text-center">
             <span class="text-text-gray-200 text-base lg:text-lg font-jost">
-              +34 1234-1234</span
+              tel: (solo)</span
             >
             <span class="text-text-gray-200 text-base lg:text-lg font-jost">
               aneka.garrapi@gmail.com</span
@@ -144,7 +144,7 @@ import Instagram from "../icons/instagram.tsx";
         </div>
         <img
           loading="lazy"
-          class="h-60 rounded-lg pr-5"
+          class="object-cover rounded-lg pr-5 w-full h-full md:w-80"
           src="/aboutfito.jpg"
           alt=""
         />
